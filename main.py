@@ -22,7 +22,12 @@ def main():
     if origin is None:
         return
 
-    create_app(app_name, origin)
+    port = input("Which port should application run on\n")
+
+    if port is None:
+        return
+
+    create_app(app_name, origin, port)
 
 
 if __name__ == '__main__':
